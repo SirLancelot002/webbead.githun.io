@@ -1,0 +1,158 @@
+.bg-black {
+    background-color: #000000;
+    position: relative;
+}
+
+.PageTitle {
+    text-align: center;
+    padding: 1%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("Media/starSky.jpg");
+    background-repeat: repeat;
+}
+
+.HeaderImg {
+    padding: 1% 0% 0% 0%;
+}
+
+.nav-link {
+    text-align: center;
+    color: black;
+}
+
+.CustomNav {
+    padding: 0% 0% 1% 0%;
+    border-radius: 5%;
+}
+
+div, nav, .rounded {
+    border-radius: 15px;
+}
+
+.onBlack {
+    color: white;
+}
+
+p {
+    font-size: large;
+    text-align: justify;
+}
+
+.padded {
+    padding: 2%;
+}
+
+.nav-link {
+    font-size: 130%;
+}
+
+.smallPad {
+    padding: 1%;
+}
+
+.Myrounded{
+    border-radius: 15px;
+    padding: 2%;
+}
+
+.keret {
+    border: wheat solid 1px;
+}
+
+.Gap {
+    padding-top: 1%;
+    margin-top: 2%;
+}
+
+h2 {
+    font-weight: bold;
+}
+
+.roundIMG {
+    border-radius: 100%;
+}
+
+.befPad {
+    padding: 0% 0% 0% 4%;
+}
+
+#toTheMain {
+    position: absolute;
+    left: -9999px;
+}
+
+a:visited {
+    color: gray;
+}
+
+.nav-link:visited, .nav-link:hover {
+    color: black;
+}
+
+.navbar-brand {
+    color: black !important;
+}
+
+#toTheMain:focus {position:static; background-color:white; font-weight: bolder;}
+
+@media print{
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        margin: 0;
+    }
+
+    header, main, footer{
+        width: 100%;
+        padding: 0;
+    }
+
+    nav{display: none; display: none;}
+
+    a:after{
+        content: " (" attr(href) ")";
+    }
+
+    a.no-Print:after{
+        display: none;
+    }
+
+    fieldset, video {
+        visibility: hidden;
+        display: none;
+    }
+
+    .Gap {
+        padding-top: 0%;
+        margin-top: 0%;
+    }
+    .befPad {
+        padding: 0%;
+    }
+    .CustomNav {
+        padding: 0%;
+        border-radius: 0%;
+    }
+    .padded, .smallPad {
+        padding: 0%;
+    }
+
+    div.row{
+        margin: 0 !important;
+    }
+
+    table tr>*{
+        border: none !important;
+        padding: 5px !important;
+    }
+
+    div.carousel{
+        display: none;
+    }
+
+    figure img{
+        max-width: 50% !important;
+    }
+}

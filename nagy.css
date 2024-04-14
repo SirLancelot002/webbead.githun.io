@@ -1,0 +1,67 @@
+@import url('custom.css');
+
+.PageTitle {
+    text-align: center;
+    padding: 2%;
+}
+
+p, label, a, .p-re, input{
+    font-size: 180% !important;
+}
+
+table {
+    font-size: 150%;
+}
+
+h1 {
+    font-size: 400%;
+}
+
+.HeaderImg {
+    padding: 2% 0% 0% 0%;
+}
+
+.CustomNav {
+    padding: 0% 0% 2% 0%;
+    border-radius: 5%;
+}
+
+.padded {
+    padding: 4%;
+}
+
+.nav-link {
+    font-size: 160%;
+}
+
+.smallPad {
+    padding: 2%;
+}
+
+.Myrounded{
+    border-radius: 15px;
+    padding: 4%;
+}
+
+.Gap {
+    padding-top: 2%;
+    margin-top: 4%;
+}
+
+h2, legend {
+    font-weight: bold;
+    font-size: 300%;
+}
+
+.befPad {
+    padding: 0% 0% 0% 4%;
+}
+
+#toTheMain {
+    position: absolute;
+    left: -9999px;
+}
+
+a:visited {
+    color: rgb(163, 0, 141);
+}

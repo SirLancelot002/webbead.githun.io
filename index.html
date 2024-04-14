@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.css" type="text/css">
+    <link rel="stylesheet" href="custom.css" type="text/css" title="normal">
+    <link rel="alternate stylesheet" type="text/css" href="nagy.css" title="nagybetus">
+    <script type="text/javascript" src="styleswitcher.js"></script>
+    <title lang="en">StarShip</title>
+</head>
+<body>
+    <header>
+        <div class="bg-light container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="PageTitle"><i lang="en">StarShip</i> Űr utazási iroda</h1>
+                    <a href="index.html#main" id="toTheMain">ugrás a main-hez</a>
+                    <nav id="gyengenlato"><a id="nagybetu" href="#" onclick="setActiveStyleSheet('nagybetus'); return false;"><span class="ikon"></span>Nagybetűs változat</a>
+                    <a id="normalbetu" href="#" onclick="setActiveStyleSheet('normal'); return false;"><span class="ikon"></span>Normál változat</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 HeaderImg">
+                    <figure>
+                        <img src="Media/GalaxySmall.jpg" alt="Kép egy lila nebuláról" class="img-fluid w-100 rounded">
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <!--------------------------------------------------------------------------------------->
+        <div class="container CustomNav">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container">
+                          <p class="navbar-brand">Utazási Lehetőségek:</p>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon">
+                            </span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="container navbar-nav">
+                              <a class="nav-link active fw-bold text-primary col-12 col-md-3" aria-current="page" href="index.html">Bevezető oldal</a>
+                              <a class="nav-link col-12 col-md-3" href="hold.html">Hold</a>
+                              <a class="nav-link col-12 col-md-3" href="venusz.html">Vénusz</a>
+                              <a class="nav-link col-12 col-md-3" href="mars.html">Mars</a>
+                            </div>
+                          </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        
+        <!--------------------------------------------------------------------------------------->
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-9 bg-light">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-7">
+                                <section id="main">
+                                <h2 class="padded">Bemutatkozó leírás:</h2>
+                                <p>Cégünk a naprendszeren belüli űrutazás úttörője. Az emberiség bármely kolóniájához eltudjuk juttatni magát. A legmodernebb „<i lang="en">StarShip</i>” rakéták bármely választható égitestre eljuttatja önt pár hónap alatt. Az utazás lehet kényelmes, és elegáns, vagy megfizethető a mindennapi emberek számára is. Mind Kínai, Angol, és Indiai kolóniákba is szervezünk utakat.
+                                    Ha készen áll egy életre szóló kalandra, ne habozzon! Regisztráljon, hogy ön is a jövő részéve válhasson!</p>
+                                <p>
+                                    A mi küldetésünk, hogy áthidaljuk az űrutazás útjának korábban nehezen áthidalhatónak tűnő akadályait. Nemcsak az elérhetőség és a kényelem terén nyújtunk forradalmi megoldásokat, hanem arra is törekszünk, hogy az űrutazás mindenki számára elérhető legyen. Emellett széleskörű kulturális és tudományos programokat kínálunk az űrutazás során, hogy utasaink valóban gazdag tapasztalatokkal térhessenek vissza a földre.
+                                </p>
+                                <p>
+                                    Az új technológiai és logisztikai fejlesztéseinknek köszönhetően mostanra már elérhetővé váltak azok a hosszú távú űrutazások, melyek korábban csak a képzeletünkben éltek. Legyen szó a Marsról, a Jupiter holdjairól vagy akár a távoli Proxima Centauri rendszeréről, mi garantáljuk, hogy utasaink biztonságban és kényelemben érkeznek célállomásukra.
+                                </p>
+                                <p>
+                                    Cégünk elkötelezett amellett, hogy az emberiség határait folyamatosan tágítsa és az űrutazásban új lehetőségeket nyisson meg mind a mindennapi emberek, mind pedig a tudomány és a technológia iránt érdeklődők számára. Legyen részese Ön is ennek az izgalmas felfedezésnek, és csatlakozzon hozzánk a jövő űrutazásainak úttörőjeként!
+                                </p>
+                                </section>
+                            </div>
+                            <div class="col-12 col-lg-5">
+                                <div class="container">
+                                    <div class="row">
+                                        <figure>
+                                            <img src="Media/Starship.jpg" alt="Kép a Starship rakétáról, amiben utazhatnak" class="img-fluid w-100 Myrounded">
+                                        </figure>
+                                    </div>
+                                    <div class="row"><!-- Ide nem kell col-12 -es div, mert mindenképp az egész conténer szélességét használják -->
+                                        <p class="smallPad"><i lang="en">StarShip</i> rakéta felszállás</p>
+                                        <video class="ratio ratio-16x9 rounded" id="rocketVideo" controls src="Media/starship-second-flight-test.mp4" poster="Media/PosterV2.PNG" width="750">
+                                        </video>
+                                        <a href="akadalymentes.html">A videó akadálymentesített leírása.</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row"><!-- Kérdőív -->
+                            <div class="col-12">
+                                <form action="mailto:marosvariakiraly@gmail.com" method="post" enctype="text/plain" class="padded">
+                                    <fieldset>
+                                        <legend>Jelentkezési űrlap</legend>
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-12 col-md-7">
+                                                    <label for="nev"><strong>Az ön neve</strong></label><br>
+                                                    <input type="text" name="nev" id="nev" size="25" maxlength="80" placeholder="Gipsz Jaka" class="form-control"><br>
+                                                    <label for="allomas"><strong>Cél állomás</strong></label><br>
+                                                    <input type="text" name="allomas" id="allomas" size="25" maxlength="80" placeholder="Cél állomás" class="form-control"><br>
+                                                </div>
+                                                <div class="col-12 col-md-5">
+                                                    <div class="container">
+                                                        <div class="row">
+                                                            <div class="col-12 col-sm-6">
+                                                                <p>Nyerlvet ismerem:</p>
+                                                                <input type="checkbox" name="angolul" id="angolul" value="igen"><label for="angolul" class="befPad">Angol</label><br>
+                                                                <input type="checkbox" name="kinaiul" id="kinaiul" value="igen"><label for="kinaiul" class="befPad">Kínai</label><br>
+                                                                <input type="checkbox" name="indiaiul" id="indiaiul" value="igen"><label for="indiaiul" class="befPad">Indiai</label><br>
+                                                            </div>
+                                                            <div class="col-12 col-sm-6">
+                                                                <p>Hova utazna?</p>
+                                                                    <input type="radio" name="uticel" id="holdra" value="moon"><label for="holdra" class="befPad p-re">Hold</label><br>
+                                                                    <input type="radio" name="uticel" id="venuszra" value="venus"><label for="venuszra" class="befPad p-re">Vénusz</label><br>
+                                                                    <input type="radio" name="uticel" id="marsra" value="mars"><label for="marsra" class="befPad p-re">Mars</label><br>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <label for="extraInfo"><strong>Extra információk:</strong></label><br>
+                                                <textarea name="extraInfo" id="extraInfo" cols="60" rows="10" placeholder="Röviden elmondhatja, milyen extra kívánságai / szükségletei lennének önnek." maxlength="800"></textarea>
+                                            </div>
+                                            <div class="row">
+                                                <p>Adatok elküldése</p>
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="col-6">
+                                                            <input type="submit" value="Beküld" class="Myrounded">
+                                                        </div>
+                                                        <div class="col-6 position-relative">
+                                                            <input type="reset" value="Törlés" class="position-absolute end-0 Myrounded">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-3">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-12">
+                                    <figure>
+                                        <a href="Media/Föld.jpg" target="_blank" class="no-Print"><img src="Media/FöldSmall.jpg" alt="Kép a Föld bolygóról" class="roundIMG img-fluid w-100 onBlack"></a>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <figure>
+                                        <a href="Media/Moon.jpg" target="_blank" class="no-Print"><img src="Media/MoonSmall.jpg" alt="Kép az egyetlen Holdunkról" class="roundIMG img-fluid w-100 onBlack"></a>
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <figure>
+                                        <img src="Media/venus.png" alt="Kép a gyönyörő Vénuszról" class="img-fluid w-100 onBlack">
+                                    </figure>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <figure>
+                                        <a href="Media/Mars.png" target="_blank" class="no-Print"><img src="Media/MarsSmall.png" alt="Kép a vörös bolygóról, a Marsról" class="roundIMG img-fluid w-100 onBlack"></a>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="container bg-light Gap">
+            <div class="row padded">
+                <div class="col-12 col-sm-6 col-md-4">
+                    <p>Készítette: <i>Marosvári Dániel</i></p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <p>Elérhetőség: <a href="mailto:marosvariakiraly@gmail.com" target="_blank">marosvariakiraly@gmail.com</a></p>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4">
+                    <p>Készült: <time datetime="2024-04-07">2024. Április 7.</time></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.js"></script>
+</body>
+</html>
